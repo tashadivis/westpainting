@@ -317,9 +317,15 @@ a:hover, a:active { outline: 0; }
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-#services { background-color: #e5e5e5; }
+#services { padding: 1em; background-color: #e5e5e5; }
 
 #services p { width: 85%; text-align: center; margin: 0 auto; }
+
+#services .service { position: relative; margin: 2em 0 4em 0; }
+
+#services .service .description { position: absolute; bottom: -30px; left: 50%; width: 70%; -webkit-transform: translateX(-50%); transform: translateX(-50%); margin: 0 auto; text-align: center; background-color: #fff; padding: 1em .5em; }
+
+#services .service .description h3 { text-transform: uppercase; margin: 0; font-weight: bold; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
