@@ -1,0 +1,27 @@
+footer#colophon {
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: $footer__background;
+
+	.site-info {
+		background-color: $copyright__background;
+		height: $footer__height;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		p { 
+			text-transform: uppercase;
+			font-size: $font__smallest;
+			margin: 0;
+			color: $white;
+			letter-spacing: .5px;
+
+			a { color: $white; }
+		}
+
+	}
+}

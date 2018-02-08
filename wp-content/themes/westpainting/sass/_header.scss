@@ -1,0 +1,48 @@
+header#masthead {
+	height: $header__height;
+	background-color: $header__background;
+	font-family: 'Arvo', serif;
+	padding: 1em;
+	display: flex;
+    align-items: center;
+
+	.site-branding {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: calc(100vw - 100px);
+
+		img {
+			max-height: 3em;
+			height: auto;
+			width: auto;
+			float: left;
+			padding-right: .75em; 
+		}
+
+		.banner {
+			//display: flex;
+
+			h1.site-title {
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 1.2em;
+				letter-spacing: 1px;
+				margin: 0;
+				a { 
+					color: $white;
+					width: auto;
+				}
+			} 
+			p.site-description {
+				margin: 0;
+				color: $blue;
+				letter-spacing: 1px;
+				font-size: .85em;
+			}
+		}
+		
+	}
+	
+}
