@@ -5,6 +5,7 @@ a {
 	color: $color__link;
 	text-decoration: none;
 	font-weight: bold;
+	transition: color .5s ease;
 
 	&:visited {
 		color: $color__link-visited;
@@ -93,6 +94,12 @@ a {
 		display: block;
 		text-decoration: none;
 		color: $white;
+		transition: all .6s ease;
+
+		&:hover {
+			color: $blue;
+			font-size: 102%;
+		}
 	}
 
 	.current_page_item > a,
@@ -105,7 +112,7 @@ a {
 /*--------------------------------------------------------------
 ## Mobile
 --------------------------------------------------------------*/
-
+@media only screen and (min-width: 1024px) { #mobile-navigation { display: none !important; } }
 @media only screen and (max-width: 1024px) {
 	
 	nav.main-navigation { display: none; }

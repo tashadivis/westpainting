@@ -18,8 +18,6 @@ html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-ad
 
 body { margin: 0; min-height: 100%; position: relative; padding-bottom: 5em; }
 
-#content { padding: 1em; }
-
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary { display: block; }
 
 audio, canvas, progress, video { display: inline-block; vertical-align: baseline; }
@@ -137,9 +135,19 @@ footer#colophon .site-info p a { color: #fff; }
 --------------------------------------------------------------*/
 body, button, input, select, optgroup, textarea { color: #333333; font-family: "Open Sans", sans-serif; font-size: 16px; font-size: 1rem; line-height: 1.5; }
 
-header.entry-header h1.entry-title { font-family: 'Arvo', serif; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
-
 header.entry-header hr { width: 7em; height: 2.25px; }
+
+h1, h2 { font-family: 'Arvo', serif; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
+
+@media only screen and (max-width: 600px) { h2 { font-size: 1.3em; } }
+
+@media only screen and (max-width: 550px) { h2 { font-size: 1.1em; } }
+
+@media only screen and (max-width: 520px) { h2 { letter-spacing: 1px; } }
+
+@media only screen and (max-width: 490px) { h2 { letter-spacing: .5px; } }
+
+@media only screen and (max-width: 430px) { h2 { letter-spacing: 0px; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -155,6 +163,31 @@ hr { background-color: #5dadff; border: 0; height: 1px; margin-bottom: 1.5em; }
 img { height: auto; /* Make sure images are scaled correctly. */ max-width: 100%; /* Adhere to container width. */ }
 
 figure { margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */ }
+
+.ctabtn { color: #fff; text-transform: uppercase; font-size: 0.75em; letter-spacing: 1px; padding: 25px 30px; -webkit-transition: all .25s ease; transition: all .25s ease; }
+
+.ctabtn:hover { padding: 26px 31px; color: #fff; }
+
+.ctabtn.bluebtn { background-color: #5dadff; }
+
+.ctabtn.yellowbtn { background-color: #fcb040; }
+
+.estimate-cta { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 2em 1.5em; }
+
+.estimate-cta h2 { text-align: left; line-height: 1.3em; }
+
+.estimate-cta h2 span { margin-top: -.5em; font-family: "Open Sans", sans-serif; font-weight: normal; }
+
+.estimate-cta h2 span a { font-weight: normal; }
+
+@media only screen and (max-width: 490px) { .estimate-cta { padding: 1em .5em !important; }
+  a.ctabtn { padding: 20px 25px; } }
+
+@media only screen and (max-width: 430px) { .estimate-cta { padding: 1em .5em !important; }
+  a.ctabtn { padding: 15px 20px; } }
+
+@media only screen and (max-width: 410px) { .estimate-cta h2 { text-align: center !important; }
+  a.ctabtn { text-align: center !important; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -177,7 +210,7 @@ textarea { width: 100%; }
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a { color: #4e4e4e; text-decoration: none; font-weight: bold; }
+a { color: #4e4e4e; text-decoration: none; font-weight: bold; -webkit-transition: color .5s ease; transition: color .5s ease; }
 
 a:visited { color: #4e4e4e; }
 
@@ -208,11 +241,15 @@ a:hover, a:active { outline: 0; }
 
 .main-navigation li { float: left; position: relative; padding: 1em; }
 
-.main-navigation a { display: block; text-decoration: none; color: #fff; }
+.main-navigation a { display: block; text-decoration: none; color: #fff; -webkit-transition: all .6s ease; transition: all .6s ease; }
+
+.main-navigation a:hover { color: #5dadff; font-size: 102%; }
 
 /*--------------------------------------------------------------
 ## Mobile
 --------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) { #mobile-navigation { display: none !important; } }
+
 @media only screen and (max-width: 1024px) { nav.main-navigation { display: none; }
   #mobile-navigation { display: none; background-color: #656363; }
   #mobile-navigation ul { list-style: none; margin: 0; padding: 1em; }

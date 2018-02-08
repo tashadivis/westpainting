@@ -27,3 +27,54 @@ img {
 figure {
 	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
 }
+
+.ctabtn {
+	color: $white;
+	text-transform: uppercase;
+	font-size: $font__smallest;
+	letter-spacing: 1px;
+	padding: 25px 30px;
+	transition: all .25s ease;
+
+	&:hover { 
+		padding: 26px 31px;
+		color: $white;
+	}
+	
+	&.bluebtn { background-color: $blue; }
+	&.yellowbtn { background-color: $yellow; }
+}
+
+
+.estimate-cta { 
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2em 1.5em;
+
+	h2 {
+		text-align: left;
+		line-height: 1.3em;
+		span { 
+			margin-top: -.5em;
+			font-family: $font__main; 
+			font-weight: normal;
+			a { font-weight: normal; }
+		}
+	}
+}
+
+@media only screen and (max-width: 490px) {
+	.estimate-cta { padding: 1em .5em !important; }
+	a.ctabtn { padding: 20px 25px; }
+}
+
+@media only screen and (max-width: 430px) {
+	.estimate-cta { padding: 1em .5em !important; }
+	a.ctabtn { padding: 15px 20px; }
+}
+
+@media only screen and (max-width: 410px) {
+	.estimate-cta h2 { text-align: center !important; }
+	a.ctabtn { text-align: center !important; }
+}
