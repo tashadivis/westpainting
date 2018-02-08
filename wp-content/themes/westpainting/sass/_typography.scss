@@ -10,8 +10,7 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
-header.entry-header{
-
+.entry-header {
 	hr {
 		width: 7em;
 		height: 2.25px;
@@ -24,6 +23,10 @@ h1,h2 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
+
+.yellowtext { color: $yellow; }
+.bluetext { color: $blue; }
+.whitetext { color: $white; }
 
 @media only screen and (max-width: 600px) {
 	h2 { font-size: 1.3em; }

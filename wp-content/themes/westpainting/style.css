@@ -135,9 +135,15 @@ footer#colophon .site-info p a { color: #fff; }
 --------------------------------------------------------------*/
 body, button, input, select, optgroup, textarea { color: #333333; font-family: "Open Sans", sans-serif; font-size: 16px; font-size: 1rem; line-height: 1.5; }
 
-header.entry-header hr { width: 7em; height: 2.25px; }
+.entry-header hr { width: 7em; height: 2.25px; }
 
 h1, h2 { font-family: 'Arvo', serif; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
+
+.yellowtext { color: #fcb040; }
+
+.bluetext { color: #5dadff; }
+
+.whitetext { color: #fff; }
 
 @media only screen and (max-width: 600px) { h2 { font-size: 1.3em; } }
 
@@ -179,6 +185,14 @@ figure { margin: 1em 0; /* Extra wide images within figure tags don't overflow t
 .estimate-cta h2 span { margin-top: -.5em; font-family: "Open Sans", sans-serif; font-weight: normal; }
 
 .estimate-cta h2 span a { font-weight: normal; }
+
+div.hero { position: relative; }
+
+div.hero .hero-content { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 75%; padding: 1em 1em 5em 1em; }
+
+div.hero .hero-content h1, div.hero .hero-content p { text-align: left; }
+
+div.hero .hero-content p { margin-bottom: 3em; }
 
 @media only screen and (max-width: 490px) { .estimate-cta { padding: 1em .5em !important; }
   a.ctabtn { padding: 20px 25px; } }
@@ -303,6 +317,10 @@ a:hover, a:active { outline: 0; }
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+#services { background-color: #e5e5e5; }
+
+#services p { width: 85%; text-align: center; margin: 0 auto; }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -349,6 +367,8 @@ embed, iframe, object { max-width: 100%; }
 
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link { display: inline-block; }
+
+.hero img { -webkit-filter: brightness(65%) saturate(135%); filter: brightness(65%) saturate(135%); }
 
 /*--------------------------------------------------------------
 ## Captions
