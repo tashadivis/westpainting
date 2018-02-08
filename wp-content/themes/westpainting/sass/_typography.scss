@@ -10,4 +10,16 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Arvo|Open+Sans');
+header.entry-header{
+
+	h1.entry-title {
+		font-family: 'Arvo', serif;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	hr {
+		width: 7em;
+		height: 2.25px;
+	}
+}

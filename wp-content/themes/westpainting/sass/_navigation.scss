@@ -32,7 +32,7 @@ a {
 .main-navigation {
 	clear: both;
 	float: left;
-	//width: 100%;
+	margin-left: auto;
 
 	ul {
 		flex: 1;
@@ -82,6 +82,7 @@ a {
 	li {
 		float: left;
 		position: relative;
+		padding: 1em;
 
 		&:hover > a,
 		&.focus > a {
@@ -105,11 +106,7 @@ a {
 ## Mobile
 --------------------------------------------------------------*/
 
-@media screen and (min-width: 37.5em) {
-	ul#primary-menu, nav.main-navigation { display: block; }
-}
-
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 1024px) {
 	
 	nav.main-navigation { display: none; }
 

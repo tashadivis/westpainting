@@ -10,10 +10,10 @@ License URI: LICENSE
 Text Domain: westpainting
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
+@import url("https://fonts.googleapis.com/css?family=Arvo|Open+Sans");
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Arvo|Open+Sans");
 html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body { margin: 0; min-height: 100%; position: relative; padding-bottom: 5em; }
@@ -97,17 +97,32 @@ td, th { padding: 0; }
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-header#masthead { height: 6em; background-color: #4e4e4e; font-family: 'Arvo', serif; padding: 1em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+header#masthead { height: 6.5em; background-color: #4e4e4e; font-family: 'Arvo', serif; padding: 1em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-header#masthead .site-branding { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; width: calc(100vw - 100px); }
+header#masthead .site-branding { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; width: 60vw; }
 
-header#masthead .site-branding img { max-height: 3em; height: auto; width: auto; float: left; padding-right: .75em; }
+header#masthead .site-branding img { max-height: 3.8em; min-width: 3em; height: auto; width: auto; float: left; padding-right: .75em; }
 
-header#masthead .site-branding .banner h1.site-title { font-weight: bold; text-transform: uppercase; font-size: 1.2em; letter-spacing: 1px; margin: 0; }
+header#masthead .site-branding .banner h1.site-title { font-weight: bold; text-transform: uppercase; font-size: 1.6em; letter-spacing: 1px; margin: 0; white-space: nowrap; }
 
 header#masthead .site-branding .banner h1.site-title a { color: #fff; width: auto; }
 
-header#masthead .site-branding .banner p.site-description { margin: 0; color: #5dadff; letter-spacing: 1px; font-size: .85em; }
+header#masthead .site-branding .banner p.site-description { margin: 0; color: #5dadff; letter-spacing: 1px; font-size: 1.1em; white-space: nowrap; }
+
+@media only screen and (max-width: 620px) { .banner h1.site-title { font-size: 1.4em !important; } }
+
+@media only screen and (max-width: 560px) { .site-branding img { max-height: 2.8em !important; }
+  .site-branding .banner h1.site-title { font-size: 1.2em !important; } }
+
+@media only screen and (max-width: 490px) { .site-branding img { max-height: 2.5em !important; }
+  .site-branding .banner h1.site-title { font-size: 1em !important; }
+  .site-branding .banner p.site-description { font-size: .9em !important; } }
+
+@media only screen and (max-width: 420px) { .site-branding img { max-height: 2.5em !important; }
+  .site-branding .banner h1.site-title { font-size: .85em !important; font-weight: normal !important; letter-spacing: 0 !important; }
+  .site-branding .banner p.site-description { font-size: .8em !important; letter-spacing: 0 !important; } }
+
+@media only screen and (max-width: 350px) { .site-branding img { display: none !important; } }
 
 footer#colophon { position: absolute; bottom: 0; right: 0; left: 0; background-color: #656363; }
 
@@ -120,7 +135,11 @@ footer#colophon .site-info p a { color: #fff; }
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body, button, input, select, optgroup, textarea { color: #333333; font-family: sans-serif; font-size: 16px; font-size: 1rem; line-height: 1.5; }
+body, button, input, select, optgroup, textarea { color: #333333; font-family: "Open Sans", sans-serif; font-size: 16px; font-size: 1rem; line-height: 1.5; }
+
+header.entry-header h1.entry-title { font-family: 'Arvo', serif; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
+
+header.entry-header hr { width: 7em; height: 2.25px; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -173,7 +192,7 @@ a:hover, a:active { outline: 0; }
 --------------------------------------------------------------*/
 #mobile-navigation { display: none; }
 
-.main-navigation { clear: both; float: left; }
+.main-navigation { clear: both; float: left; margin-left: auto; }
 
 .main-navigation ul { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; list-style: none; margin: 0; padding-left: 0; }
 
@@ -187,16 +206,14 @@ a:hover, a:active { outline: 0; }
 
 .main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul { left: auto; }
 
-.main-navigation li { float: left; position: relative; }
+.main-navigation li { float: left; position: relative; padding: 1em; }
 
 .main-navigation a { display: block; text-decoration: none; color: #fff; }
 
 /*--------------------------------------------------------------
 ## Mobile
 --------------------------------------------------------------*/
-@media screen and (min-width: 37.5em) { ul#primary-menu, nav.main-navigation { display: block; } }
-
-@media only screen and (max-width: 37.5em) { nav.main-navigation { display: none; }
+@media only screen and (max-width: 1024px) { nav.main-navigation { display: none; }
   #mobile-navigation { display: none; background-color: #656363; }
   #mobile-navigation ul { list-style: none; margin: 0; padding: 1em; }
   #mobile-navigation ul li { padding: 1em 0; text-align: center; -webkit-transition: font-size .3s ease; transition: font-size .3s ease; }

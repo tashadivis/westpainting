@@ -11,10 +11,11 @@ header#masthead {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-		width: calc(100vw - 100px);
+		width: 60vw;
 
 		img {
-			max-height: 3em;
+			max-height: 3.8em;
+			min-width: 3em;
 			height: auto;
 			width: auto;
 			float: left;
@@ -27,9 +28,10 @@ header#masthead {
 			h1.site-title {
 				font-weight: bold;
 				text-transform: uppercase;
-				font-size: 1.2em;
+				font-size: 1.6em;
 				letter-spacing: 1px;
 				margin: 0;
+				white-space: nowrap;
 				a { 
 					color: $white;
 					width: auto;
@@ -39,10 +41,62 @@ header#masthead {
 				margin: 0;
 				color: $blue;
 				letter-spacing: 1px;
-				font-size: .85em;
+				font-size: 1.1em;
+				white-space: nowrap;
 			}
 		}
 		
 	}
+}
+
+@media only screen and (max-width: 620px) {
+	.banner {
+		h1.site-title { font-size: 1.4em !important; }
+	}
+}
+
+@media only screen and (max-width: 560px) {
 	
+	.site-branding {
+		img { max-height: 2.8em !important; }
+		.banner {
+			h1.site-title { font-size: 1.2em !important; }
+		}
+	}
+}
+
+@media only screen and (max-width: 490px) {
+	
+	.site-branding {
+		img { max-height: 2.5em !important; }
+		.banner {
+			h1.site-title { font-size: 1em !important; }
+			p.site-description { font-size: .9em !important; }
+		}
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	
+	.site-branding {
+		img { max-height: 2.5em !important; }
+		.banner {
+			h1.site-title { 
+				font-size: .85em !important;
+				font-weight: normal !important;
+				letter-spacing: 0 !important;
+			}
+			p.site-description { 
+				font-size: .8em !important;
+				letter-spacing: 0 !important;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	
+	.site-branding {
+		img { display: none !important; }
+	}
 }
