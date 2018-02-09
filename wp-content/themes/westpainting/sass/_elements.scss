@@ -78,6 +78,29 @@ div.hero {
 	}
 }
 
+form { 
+	background-color: $container__background;
+	padding: 1em;
+	margin: 1em;
+
+	p {
+		label  { padding-left: .3em; }
+
+		input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea { 
+			border: none;
+			border-radius: 0;
+			height: 3em;
+			width: 100%;
+		}
+
+		textarea { 
+			height: 7em;
+			max-width: 100%;
+		}
+
+	}
+}
+
 @media only screen and (max-width: 490px) {
 	.estimate-cta { padding: 1em .5em !important; }
 	a.ctabtn { padding: 20px 25px; }

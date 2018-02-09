@@ -3,15 +3,13 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: none;
-	border-radius: 3px;
 	background: $color__background-button;
 	color: $color__text-button;
 	@include font-size(0.75);
-	line-height: 1;
-	padding: .6em 1em .4em;
+	font-weight: bold;
 
 	&:hover {
-		border: none;			
+		border: none;		
 	}
 
 	&:active,

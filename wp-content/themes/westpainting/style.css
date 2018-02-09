@@ -223,6 +223,14 @@ div.hero .hero-content h1, div.hero .hero-content p { text-align: left; }
 
 div.hero .hero-content p { margin-bottom: 3em; }
 
+form { background-color: #e5e5e5; padding: 1em; margin: 1em; }
+
+form p label { padding-left: .3em; }
+
+form p input[type="text"], form p input[type="email"], form p input[type="url"], form p input[type="password"], form p input[type="search"], form p input[type="number"], form p input[type="tel"], form p input[type="range"], form p input[type="date"], form p input[type="month"], form p input[type="week"], form p input[type="time"], form p input[type="datetime"], form p input[type="datetime-local"], form p input[type="color"], form p textarea { border: none; border-radius: 0; height: 3em; width: 100%; }
+
+form p textarea { height: 7em; max-width: 100%; }
+
 @media only screen and (max-width: 490px) { .estimate-cta { padding: 1em .5em !important; }
   a.ctabtn { padding: 20px 25px; } }
 
@@ -235,7 +243,7 @@ div.hero .hero-content p { margin-bottom: 3em; }
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button, input[type="button"], input[type="reset"], input[type="submit"] { border: none; border-radius: 3px; background: #5dadff; color: #fff; font-size: 12px; font-size: 0.75rem; line-height: 1; padding: .6em 1em .4em; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { border: none; background: #5dadff; color: #fff; font-size: 12px; font-size: 0.75rem; font-weight: bold; }
 
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { border: none; }
 

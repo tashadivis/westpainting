@@ -19,7 +19,7 @@ get_header(); ?>
 			<?php include("template-parts/hero.php"); ?>
 			<?php include("template-parts/estimate-cta.php"); ?>
 			<?php //include("template-parts/services.php"); ?>
-			<?php //include("template-parts/estimate-form.php"); ?>
+			<?php include("template-parts/estimate-form.php"); ?>
 			<?php //include("template-parts/testimonials.php"); ?>
 			<?php //include("template-parts/our-clients.php"); ?>
 		</main><!-- #main -->
