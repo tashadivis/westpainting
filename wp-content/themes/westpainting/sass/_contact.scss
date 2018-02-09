@@ -1,0 +1,20 @@
+ul#contactDetails {
+	list-style: none;
+
+	li {
+		height: 5em;
+		display: flex;
+		align-items: center;
+		margin: 2em;
+
+		span.icon {
+			width: 7em;
+			float: left;
+			clear: both;
+			img { max-width: 4em; }
+
+		}
+
+		
+	}
+}

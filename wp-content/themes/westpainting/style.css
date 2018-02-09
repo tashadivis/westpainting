@@ -164,6 +164,8 @@ body, button, input, select, optgroup, textarea { color: #333333; font-family: "
 
 h1, h2 { font-family: 'Arvo', serif; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
 
+h1.entry-title, h2.entry-title { margin-top: 1em; }
+
 a:hover { color: #5dadff; }
 
 .yellowtext { color: #fcb040; }
@@ -361,6 +363,14 @@ a:hover, a:active { outline: 0; }
 #services .service .description { position: absolute; bottom: -30px; left: 50%; width: 70%; -webkit-transform: translateX(-50%); transform: translateX(-50%); margin: 0 auto; text-align: center; background-color: #fff; padding: 1em .5em; }
 
 #services .service .description h3 { text-transform: uppercase; margin: 0; font-weight: bold; }
+
+ul#contactDetails { list-style: none; }
+
+ul#contactDetails li { height: 5em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 2em; }
+
+ul#contactDetails li span.icon { width: 7em; float: left; clear: both; }
+
+ul#contactDetails li span.icon img { max-width: 4em; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
