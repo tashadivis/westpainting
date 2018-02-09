@@ -1,3 +1,5 @@
+<!-- if is home page, only show "featured" posts -->
+
 <div id="services">
 	<div class="entry-header">
 		<h1>Our Services</h1>

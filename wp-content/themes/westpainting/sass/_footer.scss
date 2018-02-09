@@ -1,3 +1,37 @@
+footer.infoFooter{
+	background-color: $footer__background;
+	color: $white;
+	padding: 1em;
+
+	h2 { text-align: left; }
+
+	hr.hryellow { 
+		width: 4em;
+    	height: 2.25px;
+    	background-color: $yellow;
+    	margin: 0;
+    }
+
+	div.mission, div.footerContact { padding: .5em 0; }
+
+	div.footerContact {
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				span.label { 
+					width: 20%;
+					float: left;
+				}
+				a { 
+					color: $white;
+					&:hover { color: $blue; }
+				}
+			}
+		}
+	}
+}
+
 footer#colophon {
 	position:absolute;
 	bottom: 0;
@@ -20,7 +54,10 @@ footer#colophon {
 			color: $white;
 			letter-spacing: .5px;
 
-			a { color: $white; }
+			a { 
+				color: $white;
+				&:hover { color: $blue; }
+			}
 		}
 
 	}

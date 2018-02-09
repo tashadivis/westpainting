@@ -24,9 +24,12 @@ h1,h2 {
 	letter-spacing: 2px;
 }
 
+a:hover { color: $blue; }
+
 .yellowtext { color: $yellow; }
 .bluetext { color: $blue; }
 .whitetext { color: $white; }
+.greytext { color: $textgrey; }
 
 @media only screen and (max-width: 600px) {
 	h2 { font-size: 1.3em; }

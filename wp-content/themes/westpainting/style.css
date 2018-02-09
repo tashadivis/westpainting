@@ -122,6 +122,22 @@ header#masthead .site-branding .banner p.site-description { margin: 0; color: #5
 
 @media only screen and (max-width: 350px) { .site-branding img { display: none !important; } }
 
+footer.infoFooter { background-color: #656363; color: #fff; padding: 1em; }
+
+footer.infoFooter h2 { text-align: left; }
+
+footer.infoFooter hr.hryellow { width: 4em; height: 2.25px; background-color: #fcb040; margin: 0; }
+
+footer.infoFooter div.mission, footer.infoFooter div.footerContact { padding: .5em 0; }
+
+footer.infoFooter div.footerContact ul { list-style: none; padding: 0; }
+
+footer.infoFooter div.footerContact ul li span.label { width: 20%; float: left; }
+
+footer.infoFooter div.footerContact ul li a { color: #fff; }
+
+footer.infoFooter div.footerContact ul li a:hover { color: #5dadff; }
+
 footer#colophon { position: absolute; bottom: 0; right: 0; left: 0; background-color: #656363; }
 
 footer#colophon .site-info { background-color: #4e4e4e; height: 5em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; }
@@ -129,6 +145,8 @@ footer#colophon .site-info { background-color: #4e4e4e; height: 5em; display: -w
 footer#colophon .site-info p { text-transform: uppercase; font-size: 0.75em; margin: 0; color: #fff; letter-spacing: .5px; }
 
 footer#colophon .site-info p a { color: #fff; }
+
+footer#colophon .site-info p a:hover { color: #5dadff; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -139,11 +157,15 @@ body, button, input, select, optgroup, textarea { color: #333333; font-family: "
 
 h1, h2 { font-family: 'Arvo', serif; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
 
+a:hover { color: #5dadff; }
+
 .yellowtext { color: #fcb040; }
 
 .bluetext { color: #5dadff; }
 
 .whitetext { color: #fff; }
+
+.greytext { color: #333333; }
 
 @media only screen and (max-width: 600px) { h2 { font-size: 1.3em; } }
 
@@ -172,7 +194,7 @@ figure { margin: 1em 0; /* Extra wide images within figure tags don't overflow t
 
 .ctabtn { color: #fff; text-transform: uppercase; font-size: 0.75em; letter-spacing: 1px; padding: 25px 30px; -webkit-transition: all .25s ease; transition: all .25s ease; }
 
-.ctabtn:hover { padding: 26px 31px; color: #fff; }
+.ctabtn:hover, .ctabtn:visited { padding: 26px 31px; color: #fff; }
 
 .ctabtn.bluebtn { background-color: #5dadff; }
 
@@ -225,8 +247,6 @@ textarea { width: 100%; }
 ## Links
 --------------------------------------------------------------*/
 a { color: #4e4e4e; text-decoration: none; font-weight: bold; -webkit-transition: color .5s ease; transition: color .5s ease; }
-
-a:visited { color: #4e4e4e; }
 
 a:hover, a:focus, a:active { color: #5dadff; }
 

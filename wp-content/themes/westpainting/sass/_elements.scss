@@ -36,7 +36,7 @@ figure {
 	padding: 25px 30px;
 	transition: all .25s ease;
 
-	&:hover { 
+	&:hover, &:visited { 
 		padding: 26px 31px;
 		color: $white;
 	}
