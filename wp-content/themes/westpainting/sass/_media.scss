@@ -19,7 +19,14 @@ object {
 	display: inline-block;
 }
 
-.hero img { filter: brightness(65%) saturate(135%); }
+.hero img { filter: brightness(65%) saturate(135%) grayscale(100); }
+.hero { 
+	background-image: url(/westpainting/wp-content/uploads/2018/02/paintbro-1024x576.jpg);
+	height: 576px;
+	width: 100vw;
+	background-position: top right;
+	background-repeat: no-repeat;
+}
 
 /*--------------------------------------------------------------
 ## Captions
@@ -63,7 +70,43 @@ object {
 	}
 }
 
-.gallery-caption {
-	display: block;
+.gallery-caption { display: block; }
+
+/*--------------------------------------------------------------
+## Media Queries
+--------------------------------------------------------------*/
+@media only screen and (min-width: 1900px) {
+	.hero { 
+		background-position: 80% 70% !important; 
+		height: 900px !important;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.hero { 
+		background-image: url(/westpainting/wp-content/uploads/2018/02/paintbro.jpg) !important;
+		height: 700px;
+		background-size: cover;
+		background-position: 80% 50%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.hero { 
+		background-image: url(/westpainting/wp-content/uploads/2018/02/paintbro-768x432.jpg) !important;
+		height: 432px !important;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	.hero { background-position: 80% 50% !important; }
+}
+
+
+@media only screen and (max-width: 300px) {
+	.hero { 
+		background-image: url(/westpainting/wp-content/uploads/2018/02/paintbro-300x169.jpg) !important;
+		height: 169px !important;
+	}
 }
 
