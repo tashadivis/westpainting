@@ -132,7 +132,7 @@ footer.infoFooter div.mission, footer.infoFooter div.footerContact { padding: .5
 
 footer.infoFooter div.footerContact ul { list-style: none; padding: 0; }
 
-footer.infoFooter div.footerContact ul li span.label { width: 20%; float: left; }
+footer.infoFooter div.footerContact ul li span.label { width: 6em; float: left; }
 
 footer.infoFooter div.footerContact ul li a { color: #fff; }
 
