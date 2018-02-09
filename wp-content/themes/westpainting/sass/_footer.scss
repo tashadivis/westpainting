@@ -1,5 +1,6 @@
 footer.infoFooter{
 	background-color: $footer__background;
+	height: 100%;
 	color: $white;
 	padding: 1em;
 
@@ -60,5 +61,27 @@ footer#colophon {
 			}
 		}
 
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	footer.infoFooter {
+		display: flex;
+
+		div.mission { 
+			width: 50%; 
+			float: left;
+			padding-right: 10%;
+		}
+		div.footerContact { width: 40%; }
+	}
+}
+
+@media only screen and (max-width: 410px) { 
+	footer.infoFooter div.footerContact {
+		ul li {
+			span.label { width: 100%; }
+			span.label { padding: 1em 0 0 0; }
+		}
 	}
 }
