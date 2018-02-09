@@ -217,14 +217,6 @@ figure { margin: 1em 0; /* Extra wide images within figure tags don't overflow t
 
 .estimate-cta h2 span a { font-weight: normal; }
 
-div.hero { position: relative; }
-
-div.hero .hero-content { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 75%; padding: 1em 1em 5em 1em; }
-
-div.hero .hero-content h1, div.hero .hero-content p { text-align: left; }
-
-div.hero .hero-content p { margin-bottom: 3em; }
-
 form { background-color: #e5e5e5; padding: 1em; margin: 1em; }
 
 form p label { padding-left: .3em; }
@@ -354,7 +346,7 @@ a:hover, a:active { outline: 0; }
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-#services { padding: 1em; background-color: #e5e5e5; }
+#services { padding: 1em; background-color: #e5e5e5; margin: 0 auto; text-align: center; }
 
 #services p { width: 85%; text-align: center; margin: 0 auto; }
 
@@ -419,9 +411,13 @@ embed, iframe, object { max-width: 100%; }
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link { display: inline-block; }
 
-.hero img { -webkit-filter: brightness(65%) saturate(135%) grayscale(100); filter: brightness(65%) saturate(135%) grayscale(100); }
+div.hero { position: relative; height: 576px; width: 100vw; background-image: url(/westpainting/wp-content/uploads/2018/02/paintbro-1024x576.jpg); background-position: top right; background-repeat: no-repeat; }
 
-.hero { background-image: url(/westpainting/wp-content/uploads/2018/02/paintbro-1024x576.jpg); height: 576px; width: 100vw; background-position: top right; background-repeat: no-repeat; }
+div.hero .hero-content { position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 75%; padding: 1em 1em 5em 1em; }
+
+div.hero .hero-content h1, div.hero .hero-content p { text-align: left; }
+
+div.hero .hero-content p { margin-bottom: 3em; }
 
 /*--------------------------------------------------------------
 ## Captions
@@ -462,14 +458,31 @@ embed, iframe, object { max-width: 100%; }
 /*--------------------------------------------------------------
 ## Media Queries
 --------------------------------------------------------------*/
-@media only screen and (min-width: 1900px) { .hero { background-position: 80% 70% !important; height: 900px !important; } }
+@media only screen and (min-width: 1900px) { .ctabtn { font-size: 1em !important; }
+  div.hero { background-position: 80% 70% !important; height: 900px !important; }
+  div.hero div.hero-content { padding-left: 6em; width: 50% !important; }
+  div.hero div.hero-content h1 { font-size: 4em; }
+  div.hero div.hero-content p { font-size: 2em !important; } }
 
-@media only screen and (min-width: 1024px) { .hero { background-image: url(/westpainting/wp-content/uploads/2018/02/paintbro.jpg) !important; height: 700px; background-size: cover; background-position: 80% 50%; } }
+@media only screen and (min-width: 1700px) { .hero { background-position: 50% 65% !important; } }
+
+@media only screen and (min-width: 1250px) { .hero { background-position: 50% 50% !important; }
+  .hero .hero-content p { font-size: 1.5em !important; } }
+
+@media only screen and (min-width: 1024px) { .hero { background-image: url(/westpainting/wp-content/uploads/2018/02/paintbro.jpg) !important; height: 700px; background-size: cover; background-position: 80% 50%; }
+  .hero .hero-content { width: 60% !important; }
+  .hero .hero-content h1 { font-size: 3em; }
+  .hero .hero-content p { font-size: 1.2em; } }
 
 @media only screen and (max-width: 768px) { .hero { background-image: url(/westpainting/wp-content/uploads/2018/02/paintbro-768x432.jpg) !important; height: 432px !important; } }
 
-@media only screen and (max-width: 570px) { .hero { background-position: 80% 50% !important; } }
+@media only screen and (max-width: 570px) { .hero { background-position: 80% 50% !important; }
+  .hero .hero-content { width: 100% !important; } }
 
-@media only screen and (max-width: 300px) { .hero { background-image: url(/westpainting/wp-content/uploads/2018/02/paintbro-300x169.jpg) !important; height: 169px !important; } }
+@media only screen and (max-width: 300px) { .hero { background-image: url(/westpainting/wp-content/uploads/2018/02/paintbro-300x169.jpg) !important; height: 169px !important; }
+  .hero .hero-content { padding: 1em !important; width: 100% !important; }
+  .hero .hero-content h1 { font-size: 1em !important; letter-spacing: 0; }
+  .hero .hero-content p { font-size: 12px; margin-bottom: 12px !important; }
+  .hero .hero-content a.ctabtn { display: none; } }
 
 /*# sourceMappingURL=../westpainting/sass/maps/style.css.map */

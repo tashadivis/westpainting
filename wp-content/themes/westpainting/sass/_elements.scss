@@ -64,20 +64,6 @@ figure {
 	}
 }
 
-div.hero { 
-	position: relative;
-
-	.hero-content { 
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		h1, p { text-align: left; }
-		p { margin-bottom: 3em; }
-		width: 75%;
-		padding: 1em 1em 5em 1em;
-	}
-}
-
 form { 
 	background-color: $container__background;
 	padding: 1em;
