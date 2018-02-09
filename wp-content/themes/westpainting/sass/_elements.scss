@@ -35,6 +35,7 @@ figure {
 	letter-spacing: 1px;
 	padding: 25px 30px;
 	transition: all .25s ease;
+	display: inline-block;
 
 	&:hover, &:visited { 
 		padding: 26px 31px;
@@ -84,6 +85,12 @@ form {
 			max-width: 100%;
 		}
 
+	}
+}
+@media only screen and (min-width: 1900px) {
+	.estimate-cta { 
+		padding-left: 6em !important;
+		padding-right: 6em !important;
 	}
 }
 
