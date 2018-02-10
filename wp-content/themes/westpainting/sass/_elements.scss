@@ -87,6 +87,24 @@ form {
 
 	}
 }
+@media only screen and (min-width: 1400px) {
+	.estimate-form {
+		width: calc(50% - 2em);
+		float: left;
+		margin: 1em;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	#testimonials, #our-clients { 
+		width: calc(50% - 1.5em);
+		float: left;
+		margin: 1em;
+	}
+	#testimonials { margin-right: .5em; }
+	#our-clients { margin-left: .5em; }
+}
+
 @media only screen and (min-width: 1900px) {
 	.estimate-cta { 
 		padding-left: 6em !important;
