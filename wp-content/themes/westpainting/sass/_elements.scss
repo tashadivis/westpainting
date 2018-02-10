@@ -30,6 +30,8 @@ figure {
 	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
 }
 
+.heading2 { display: none; }
+
 .ctabtn {
 	color: $white;
 	text-transform: uppercase;
@@ -89,6 +91,14 @@ form {
 
 	}
 }
+
+@media only screen and (min-width: 1900px) {
+	.estimate-cta { 
+		padding-left: 6em !important;
+		padding-right: 6em !important;
+	}
+}
+
 @media only screen and (min-width: 1400px) {
 	.estimate-form {
 		width: 50%;
@@ -105,13 +115,6 @@ form {
 	}
 	#testimonials { margin-right: .5em; }
 	#our-clients { margin-left: .5em; }
-}
-
-@media only screen and (min-width: 1900px) {
-	.estimate-cta { 
-		padding-left: 6em !important;
-		padding-right: 6em !important;
-	}
 }
 
 @media only screen and (max-width: 490px) {

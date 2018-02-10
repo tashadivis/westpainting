@@ -1,7 +1,5 @@
 <div id="our-clients">
-	<h1 class="yellowtext">Our<br>
-		<span class="greytext">Clients</span>
-	</h1>
+	<h1 class="yellowtext">Our<br><span class="greytext">Clients</span></h1>
 	<div class="slider clients">
 		<div><img src="<?php echo esc_url( home_url( '/wp-content/uploads/2018/02/max-mara.png' ) ); ?>"></div>
 		<div><img src="<?php echo esc_url( home_url( '/wp-content/uploads/2018/02/lindasale.png' ) ); ?>"></div>

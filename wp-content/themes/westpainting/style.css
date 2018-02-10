@@ -203,6 +203,8 @@ img { height: auto; /* Make sure images are scaled correctly. */ max-width: 100%
 
 figure { margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */ }
 
+.heading2 { display: none; }
+
 .ctabtn { color: #fff; text-transform: uppercase; font-size: 0.75em; letter-spacing: 1px; padding: 25px 30px; -webkit-transition: all .25s ease; transition: all .25s ease; display: inline-block; }
 
 .ctabtn:hover, .ctabtn:visited { padding: 26px 31px; color: #fff; }
@@ -227,13 +229,13 @@ form p input[type="text"], form p input[type="email"], form p input[type="url"],
 
 form p textarea { height: 7em; max-width: 100%; }
 
+@media only screen and (min-width: 1900px) { .estimate-cta { padding-left: 6em !important; padding-right: 6em !important; } }
+
 @media only screen and (min-width: 1400px) { .estimate-form { width: 50%; float: left; margin: 1em 0; } }
 
 @media only screen and (min-width: 1024px) { #testimonials, #our-clients { width: calc(50% - 1.5em); float: left; margin: 1em; }
   #testimonials { margin-right: .5em; }
   #our-clients { margin-left: .5em; } }
-
-@media only screen and (min-width: 1900px) { .estimate-cta { padding-left: 6em !important; padding-right: 6em !important; } }
 
 @media only screen and (max-width: 490px) { .estimate-cta { padding: 1em .5em !important; }
   a.ctabtn { padding: 20px 25px; } }
@@ -405,13 +407,22 @@ a:hover, a:active { outline: 0; }
   #services .service .description { width: 100%; max-width: 100%; position: initial; -webkit-transform: initial; transform: initial; margin-top: -5px; }
   #services p { width: 100%; } }
 
-ul#contactDetails { list-style: none; }
+ul#contactDetails { list-style: none; padding: 0; }
 
 ul#contactDetails li { height: 5em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 2em; }
 
-ul#contactDetails li span.icon { width: 7em; float: left; clear: both; }
+ul#contactDetails li span.icon { width: 7em; min-width: 7em; float: left; clear: both; }
 
 ul#contactDetails li span.icon img { max-width: 4em; }
+
+@media only screen and (min-width: 1024px) { ul#contactDetails, .contactpageform .wpcf7 { width: 50%; float: left; }
+  ul#contactDetails { height: 552px; padding: 5em 5vw; }
+  ul#contactDetails span.info { font-size: 1.5em; }
+  ul#contactDetails li { padding: 3em 0; } }
+
+@media only screen and (max-width: 420px) { ul#contactDetails { margin: 1em; }
+  ul#contactDetails li { margin: 2em 0; }
+  ul#contactDetails li span.icon { width: 5em; min-width: 5em; } }
 
 /*--------------------------------------------------------------
 ## Posts and pages

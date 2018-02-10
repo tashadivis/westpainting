@@ -8,23 +8,23 @@
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	<div id="servicesContainer">
 		<div class="service">
-			<img src="<?php echo esc_url( home_url( '/wp-content/uploads/2018/02/house.jpg' ) ); ?>">
+			<img src="<?php echo esc_url( home_url( '/wp-content/themes/westpainting/inc/services/painting.jpg' ) ); ?>">
 			<div class="description">
 				<h3>Painting</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor</p>
 			</div>
 		</div>
 		<div class="service">
-			<img src="<?php echo esc_url( home_url( '/wp-content/uploads/2018/02/house.jpg' ) ); ?>">
+			<img src="<?php echo esc_url( home_url( '/wp-content/themes/westpainting/inc/services/wallpapering.jpg' ) ); ?>">
 			<div class="description">
-				<h3>Painting</h3>
+				<h3>Wallpapering</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor</p>
 			</div>
 		</div>
 		<div class="service">
-			<img src="<?php echo esc_url( home_url( '/wp-content/uploads/2018/02/house.jpg' ) ); ?>">
+			<img src="<?php echo esc_url( home_url( '/wp-content/themes/westpainting/inc/services/renovating.jpg' ) ); ?>">
 			<div class="description">
-				<h3>Painting</h3>
+				<h3>Renovation</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor</p>
 			</div>
 		</div>
@@ -42,44 +42,44 @@
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	<div id="servicesContainer">
 		<div class="service">
-			<img src="<?php echo esc_url( home_url( '/wp-content/uploads/2018/02/house.jpg' ) ); ?>">
+			<img src="<?php echo esc_url( home_url( '/wp-content/themes/westpainting/inc/services/painting.jpg' ) ); ?>">
 			<div class="description">
 				<h3>Painting</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor</p>
 			</div>
 		</div>
 		<div class="service">
-			<img src="<?php echo esc_url( home_url( '/wp-content/uploads/2018/02/house.jpg' ) ); ?>">
+			<img src="<?php echo esc_url( home_url( '/wp-content/themes/westpainting/inc/services/wallpapering.jpg' ) ); ?>">
 			<div class="description">
-				<h3>Painting</h3>
+				<h3>Wallpapering</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor</p>
 			</div>
 		</div>
 		<div class="service">
-			<img src="<?php echo esc_url( home_url( '/wp-content/uploads/2018/02/house.jpg' ) ); ?>">
+			<img src="<?php echo esc_url( home_url( '/wp-content/themes/westpainting/inc/services/renovating.jpg' ) ); ?>">
 			<div class="description">
-				<h3>Painting</h3>
+				<h3>Renovation</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor</p>
 			</div>
 		</div>
 		<div class="service">
-			<img src="<?php echo esc_url( home_url( '/wp-content/uploads/2018/02/house.jpg' ) ); ?>">
+			<img src="<?php echo esc_url( home_url( '/wp-content/themes/westpainting/inc/services/remodeling.jpg' ) ); ?>">
 			<div class="description">
-				<h3>Painting</h3>
+				<h3>Remodeling</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor</p>
 			</div>
 		</div>
 		<div class="service">
-			<img src="<?php echo esc_url( home_url( '/wp-content/uploads/2018/02/house.jpg' ) ); ?>">
+			<img src="<?php echo esc_url( home_url( '/wp-content/themes/westpainting/inc/services/staging.jpeg' ) ); ?>">
 			<div class="description">
-				<h3>Painting</h3>
+				<h3>Staging</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor</p>
 			</div>
 		</div>
 		<div class="service">
-			<img src="<?php echo esc_url( home_url( '/wp-content/uploads/2018/02/house.jpg' ) ); ?>">
+			<img src="<?php echo esc_url( home_url( '/wp-content/themes/westpainting/inc/services/colour-consulting.jpg' ) ); ?>">
 			<div class="description">
-				<h3>Painting</h3>
+				<h3>Colour Consulting</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor</p>
 			</div>
 		</div>

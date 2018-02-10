@@ -1,5 +1,6 @@
 ul#contactDetails {
 	list-style: none;
+	padding: 0;
 
 	li {
 		height: 5em;
@@ -9,12 +10,36 @@ ul#contactDetails {
 
 		span.icon {
 			width: 7em;
+			min-width: 7em;
 			float: left;
 			clear: both;
 			img { max-width: 4em; }
-
 		}
+	}
+}
 
-		
+@media only screen and (min-width: 1024px) {
+	ul#contactDetails, .contactpageform .wpcf7 {
+		width: 50%;
+		float: left;
+	}
+	ul#contactDetails {
+		height: 552px;
+		padding: 5em 5vw;
+		span.info { font-size: 1.5em; }
+		li { padding: 3em 0; }
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	ul#contactDetails {
+		margin: 1em;
+		li {
+			margin: 2em 0;
+			span.icon { 
+				width: 5em;
+				min-width: 5em;
+			}
+		}
 	}
 }
